@@ -1,0 +1,11 @@
+
+[OPTIONS]
+TITLE=Moshe's Insanity Help
+CONTENTS=Contents
+
+[FILES]
+moshe.rtf
+
+[CONFIG]
+BrowseButtons()
+

@@ -1,0 +1,4 @@
+#define HELP_OVERVIEW	0x101
+#define HELP_PLAY	0x102
+#define HELP_STRATEGY	0x103
+#define HELP_GAME	0x104

@@ -1,0 +1,39 @@
+/********************************************************************
+ *                                                                  *
+ *   Source File: Moshe.rc                                          *
+ *   Resource file for Moshe application                            *
+ *      (really only the menu for the main window)                  *
+ *                                                                  *
+ *   by Shaun Miller, 1994                                          *
+ *                                                                  *
+ ********************************************************************/
+
+#include <windows.h>
+#define IDM_MAINMENU        200
+#define IDM_GAMENEW	   	    201
+#define IDM_GAMERESET       202
+#define IDM_GAMESOLVE       203
+#define IDM_HELPABOUT     	301
+#define IDM_HELPCONTENTS    302
+#define CM_EXIT             IDCANCEL
+
+IDM_MAINMENU MENU 
+BEGIN
+	POPUP "&Game"
+	BEGIN
+		MENUITEM "&New", IDM_GAMENEW
+		MENUITEM "&Reset", IDM_GAMERESET
+		MENUITEM "&Solve", IDM_GAMESOLVE
+		MENUITEM SEPARATOR
+		MENUITEM "E&xit", CM_EXIT
+	END
+	POPUP "\a&Help", HELP
+	BEGIN
+		MENUITEM "&Contents", IDM_HELPCONTENTS
+		MENUITEM SEPARATOR
+		MENUITEM "&About", IDM_HELPABOUT
+   END
+
+END
+
+#include "mosh-abo.rc"

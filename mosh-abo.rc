@@ -1,0 +1,13 @@
+#define IDD_ABOUTCUBE	101
+#define WIDTH_HEIGHT		25
+#define IDD_MOSHEABOUT       9999
+
+IDD_MOSHEABOUT DIALOG 83, 35, 176, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Moshe's Insanity"
+BEGIN
+	CTEXT "Moshe's Insanity\nWritten by Shaun Miller\nDec. 1994\nModified March 1995\n\nProblem Proposed by Moshe Rosenfeld (moishe@math.washington.edu)", -1, 30, 5, 140, 65, WS_CHILD | WS_VISIBLE | WS_GROUP
+	DEFPUSHBUTTON "OK", IDOK, 85, 70, 24, 14, WS_CHILD | WS_VISIBLE | WS_TABSTOP
+	CONTROL "", IDD_ABOUTCUBE, "static", WS_CHILD, 10, 5, 10+WIDTH_HEIGHT, 5+WIDTH_HEIGHT
+END
+
